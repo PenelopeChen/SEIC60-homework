@@ -25,10 +25,27 @@
 // }
 
 //Section 4
-const menuChoice = prompt("Is your menu choice vegan? True or false?")
-const veganPlus = false
-if (menuChoice === veganPlus) {
-    console.log("This cuisine is vegan friendly.")
-} else {
-    console.log("Vegans beware!")
-}
+// const menuChoice = prompt("Is your menu choice vegan? True or false?")
+// const veganPlus = false
+// if (menuChoice === veganPlus) {
+//     console.log("This cuisine is vegan friendly.")
+// } else {
+//     console.log("Vegans beware!")
+// }
+
+//Section 5 
+// const substanceMoves = false 
+// const substanceShouldMove = false
+// if (substanceMoves === true) {
+//     if(substanceShouldMove === true) {
+//         console.log("No problem")
+//     } else {
+//         console.log("Use duct tape.")
+//     }
+// } else {
+//     if (substanceShouldMove === true) {
+//         console.log("Use WD-40.")
+//     } else {
+//         console.log("No problem")
+//     }
+// }
