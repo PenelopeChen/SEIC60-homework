@@ -13,13 +13,22 @@
 // }
 
 //Section 3 
-const b = 75
-if (b <= 25) {
-    console.log("bottom quartile")
-} else if (b > 25 && b <= 50) {
-    console.log("lower quartile")
-} else if (b > 50 && b <= 75) {
-    console.log("upper quartile")
-} else if (b > 75 && b <= 100) {
-    console.log("top quartile")
+// const b = 75
+// if (b <= 25) {
+//     console.log("bottom quartile")
+// } else if (b > 25 && b <= 50) {
+//     console.log("lower quartile")
+// } else if (b > 50 && b <= 75) {
+//     console.log("upper quartile")
+// } else if (b > 75 && b <= 100) {
+//     console.log("top quartile")
+// }
+
+//Section 4
+const menuChoice = prompt("Is your menu choice vegan? True or false?")
+const veganPlus = false
+if (menuChoice === veganPlus) {
+    console.log("This cuisine is vegan friendly.")
+} else {
+    console.log("Vegans beware!")
 }
