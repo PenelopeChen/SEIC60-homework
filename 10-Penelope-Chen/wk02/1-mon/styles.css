@@ -36,6 +36,12 @@ p, li {
     color: rgb(98, 207, 98);
 }
 
+.specials {
+    margin: 10px auto 10px auto;
+    display: flex; 
+    flex: auto;
+}
+
 img {
     width: 25%;
     height: auto;
