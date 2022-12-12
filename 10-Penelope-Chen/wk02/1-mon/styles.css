@@ -1,0 +1,17 @@
+h1, h2 {
+    font-family: "millenia";
+    font-size: 70px;
+    line-height: 1.5;
+
+}
+
+.disclaimer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+}
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
