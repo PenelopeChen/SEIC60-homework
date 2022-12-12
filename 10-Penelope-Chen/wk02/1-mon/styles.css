@@ -36,6 +36,18 @@ p, li {
     color: rgb(98, 207, 98);
 }
 
+img {
+    width: 25%;
+    height: auto;
+    max-width: 800px;
+}
+
+.og {
+    margin: 10px auto 10px auto;
+    display: flex; 
+    flex: auto;
+}
+
 footer {
     font-family: "millenia";
     font-size: 10px;
