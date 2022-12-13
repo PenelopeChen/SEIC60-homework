@@ -3,7 +3,24 @@ h1 {
 }
 
 body { 
-    background-image: url("background.jpg") #d6d6d6;
+    background: #d6d6d6 url("img/images/background.jpg") cover;
     font:  12px "Helvetica";
     height: 100%;
+}
+
+header {
+    display: inline;
+}
+
+.cover {
+    z-index: 1;
+}
+
+.logo {
+    z-index: 2;
+}
+
+a {
+    color: red;
+    text-decoration: none;
 }
