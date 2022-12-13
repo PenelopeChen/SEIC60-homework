@@ -3,9 +3,14 @@ h1 {
 }
 
 body { 
-    background: #d6d6d6 url("img/images/background.jpg") cover;
+    background: #d6d6d6 url("img/images/background.jpg") repeat left right;
+    background-size: cover;
     font:  12px "Helvetica";
     height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
 }
 
 header {
