@@ -1,0 +1,9 @@
+h1 { 
+    font: 36px/1.7;
+}
+
+body { 
+    background-image: url("background.jpg") #d6d6d6;
+    font:  12px "Helvetica";
+    height: 100%;
+}
