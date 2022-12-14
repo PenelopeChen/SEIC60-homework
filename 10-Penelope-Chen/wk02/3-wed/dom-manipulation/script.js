@@ -37,22 +37,28 @@ const removeLastFavoriteThing = () => {
 }
 removeLastFavoriteThing()
 
-// Part 4
+// Part 4 - not sure if this worked
 const makeSpecialTitlesBigger = () => {
   let newSpecTitles = document.getElementsByClassName("special-title")
   document.newSpecTitles.style.fontSize = "2 rem"
 }
-makeSpecialTitlesBigger
+makeSpecialTitlesBigger()
 
-// Part 5
-const RemoveChicagoRace = () => {
-
+// Part 5 - not sure why this doesn't work
+const removeChicagoRace = () => {
+  let list = document.getElementById("past-races")
+  list.removeChild(list.children[3])
 }
+removeChicagoRace()
 
-// Part 6
+// Part 6 - doesn't work either
 const addPastRace = () => {
-
+  let raceList = document.createElement("li")
+  let node = document.createTextNode("Sydney")
+  raceList.appendChild(node)
+  document.getElementById("past-races").appendChild(raceList)
 }
+addPastRace()
 
 // Part 7
 const createNewBlogPost = () => {
