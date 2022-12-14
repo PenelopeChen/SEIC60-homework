@@ -24,11 +24,11 @@ const shortenPageTitle = () => {
 shortenPageTitle()
 
 // Part 2
-// const changeBodyBgColor = () => {
-//   const newBodyBgColor = document.querySelector("background-color")
-//   body.style.backgroundColor = "darkseagreen"
-// }
-// changeBodyBgColor()
+const changeBodyBgColor = () => {
+  let newBodyBgColor = document.querySelector("background-color")
+  document.body.style.backgroundColor = "darkseagreen"
+}
+changeBodyBgColor()
 
 // Part 3
 const removeLastFavoriteThing = () => {
