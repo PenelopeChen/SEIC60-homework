@@ -32,8 +32,10 @@ changeBodyBgColor()
 
 // Part 3
 const removeLastFavoriteThing = () => {
-
+  let newList = document.getElementById("favorite-things")
+  newList.removeChild(newList.lastElementChild)
 }
+removeLastFavoriteThing()
 
 // Part 4
 const makeSpecialTitlesBigger = () => {
