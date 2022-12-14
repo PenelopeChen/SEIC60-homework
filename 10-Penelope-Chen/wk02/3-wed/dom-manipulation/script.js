@@ -40,7 +40,7 @@ removeLastFavoriteThing()
 // Part 4 - not sure if this worked
 const makeSpecialTitlesBigger = () => {
   let newSpecTitles = document.getElementsByClassName("special-title")
-  document.newSpecTitles.style.fontSize = "2 rem"
+  newSpecTitles.style.fontSize = "2 rem"
 }
 makeSpecialTitlesBigger()
 
@@ -60,7 +60,15 @@ const addPastRace = () => {
 }
 addPastRace()
 
-// Part 7
+// Part 7 - stack overflow sad
 const createNewBlogPost = () => {
-
+  let newDiv = document.createElement("div").className += "blog-post"
+  newDiv.textContent = "div"
+  newDiv.append()
+  let newHeading = document.createElement("h2")
+  newHeading.textContent = "Vroom vroom"
+  newHeading.append()
+  let newP = document.createTextNode("Yo dudes & dudettes")
+  newP.appendChild() 
 }
+createNewBlogPost()
