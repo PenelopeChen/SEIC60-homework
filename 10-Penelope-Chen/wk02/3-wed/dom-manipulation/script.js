@@ -18,15 +18,17 @@ randomQuote()
 
 // Part 1
 const shortenPageTitle = () => {
-  const newPageTitle = document.getElementById(".main-title") 
-  console.log("Yo, Dom Toretto says hi!")
+  let newPageTitle = document.getElementById("main-title")  
+  newPageTitle.textContent = "Yo, Dom Toretto says hi!"
 }
 shortenPageTitle()
 
 // Part 2
-const changeBodyBgColor = () => {
-
-}
+// const changeBodyBgColor = () => {
+//   const newBodyBgColor = document.querySelector("background-color")
+//   body.style.backgroundColor = "darkseagreen"
+// }
+// changeBodyBgColor()
 
 // Part 3
 const removeLastFavoriteThing = () => {
