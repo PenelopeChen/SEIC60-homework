@@ -39,8 +39,10 @@ removeLastFavoriteThing()
 
 // Part 4
 const makeSpecialTitlesBigger = () => {
-
+  let newSpecTitles = document.getElementsByClassName("special-title")
+  document.newSpecTitles.style.fontSize = "2 rem"
 }
+makeSpecialTitlesBigger
 
 // Part 5
 const RemoveChicagoRace = () => {
