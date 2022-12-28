@@ -39,4 +39,6 @@ const solarSystem = [
     { name: 'Uranus', ringSystem: true, moons: ['Miranda', 'Titania', 'Ariel', 'Umbriel'] },
     { name: 'Neptune', ringSystem: true, moons: ['Triton', 'Nereid'] }
   ]
-console.log(solarSystem([4]))
+// 1  
+console.log(solarSystem[4].moons)
+// 2
