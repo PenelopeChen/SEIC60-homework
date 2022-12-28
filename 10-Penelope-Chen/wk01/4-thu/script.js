@@ -52,3 +52,5 @@ solarSystem[2].diameter = '7917.5'
 // 6 
 solarSystem[0].ringSystem = true
 // 7 
+solarSystem[6].moons[3] = 'Oberon'
+// 8 
