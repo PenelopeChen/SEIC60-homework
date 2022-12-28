@@ -44,4 +44,5 @@ console.log(solarSystem[4].moons)
 // 2
 console.log(solarSystem[7].moons[1])
 // 3
- 
+solarSystem[1].moons.push('Endor')
+// 4
