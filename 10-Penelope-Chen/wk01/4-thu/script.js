@@ -54,3 +54,10 @@ solarSystem[0].ringSystem = true
 // 7 
 solarSystem[6].moons[3] = 'Oberon'
 // 8 
+for (let i = 0; i < solarSystem.length; i++) {
+  if (solarSystem[i].ringSystem === true) {
+    console.log(solarSystem[i].ringSystem)
+  } else {
+    
+  }
+}
