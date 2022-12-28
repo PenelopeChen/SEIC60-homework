@@ -50,3 +50,5 @@ solarSystem.push({name: 'Pluto', ringSystem: false, moons: ['Charon']})
 // 5
 solarSystem[2].diameter = '7917.5'
 // 6 
+solarSystem[0].ringSystem = true
+// 7 
