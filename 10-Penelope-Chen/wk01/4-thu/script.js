@@ -46,3 +46,5 @@ console.log(solarSystem[7].moons[1])
 // 3
 solarSystem[1].moons.push('Endor')
 // 4
+solarSystem.push({name: 'Pluto', ringSystem: false, moons: ['Charon']})
+// 5
