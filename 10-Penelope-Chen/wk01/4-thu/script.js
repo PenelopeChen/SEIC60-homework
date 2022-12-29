@@ -240,3 +240,17 @@
 // console.log(system)
 
 // The Reading List
+// const books = [
+//   {title: "Harry Potter and the Philosopher's Stone", author: "J.K. Rowling", alreadyRead: true},
+//   {title: "The Alchemyst: The Secrets of the Immortal Nicholas Flamel", author: "Michael Scott", alreadyRead: true},
+//   {title: "Atomic Habits", author: "James Clear", alreadyRead: false},
+//   {title: "The Vorrh", author: "Brian Catling", alreadyRead: true},
+//   {title: "I'm Glad My Mom Died", author: "Jennette McCurdy", alreadyRead: false}
+// ]
+// for (let i = 0; i < books.length; i++) {
+//   if (books[i].alreadyRead === true) {
+//   console.log(`${books[i].title} by ${books[i].author}`)
+//   } else {
+
+//   }
+// }
