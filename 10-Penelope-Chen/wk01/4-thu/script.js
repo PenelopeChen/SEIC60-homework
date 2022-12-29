@@ -204,3 +204,5 @@ const system = {
 // 1 
 console.log(system.Mercury.mass)
 // 2
+console.log(system.Venus.eccentricity)
+// 3
