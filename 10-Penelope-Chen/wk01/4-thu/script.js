@@ -215,3 +215,5 @@ if (typeof system.Mercury.radiusp === "string") {
 
 }
 // 5 
+console.log(system.Mercury.radiusp)
+// 6
