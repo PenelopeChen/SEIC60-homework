@@ -209,3 +209,9 @@ console.log(system.Venus.eccentricity)
 const outerPlanetSatelliteSum = system.Jupiter.satellites + system.Saturn.satellites + system.Uranus.satellites + system.Neptune.satellites 
 console.log(outerPlanetSatelliteSum)
 // 4
+if (typeof system.Mercury.radiusp === "string") {
+  console.log(system.Mercury.radiusp = system.Mercury.radiuse)
+} else {
+
+}
+// 5 
