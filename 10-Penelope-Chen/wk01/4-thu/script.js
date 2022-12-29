@@ -201,23 +201,42 @@
 //      inclination: 17.15 } 
 // }
 
-// // 1 
+// // // 1 
 // console.log(system.Mercury.mass)
-// // 2
+// // // 2
 // console.log(system.Venus.eccentricity)
-// // 3
+// // // 3
 // const outerPlanetSatelliteSum = system.Jupiter.satellites + system.Saturn.satellites + system.Uranus.satellites + system.Neptune.satellites 
 // console.log(outerPlanetSatelliteSum)
-// // 4
+// // // 4
 // if (typeof system.Mercury.radiusp === "string") {
 //   console.log(system.Mercury.radiusp = system.Mercury.radiuse)
 // } else {
 
 // }
-// // 5 
+// // // 5 
 // console.log(system.Mercury.radiusp)
-// // 6
+// // // 6
 // const momentumDiff = (system.Jupiter.velocity * system.Jupiter.mass - system.Pluto.velocity * system.Pluto.mass)
 // console.log(momentumDiff)
+// // Planet X
+// const PlanetX = {
+//   radiusp: 32473,
+//   name: 'Planet X',
+//   density: 4.53,
+//   tilt: 234.54,
+//   image: 'textures/planetx.gif',
+//   rotationperiod: 234.5,
+//   period: 34.32,
+//   radiuse: 2342,
+//   satellites: 3,
+//   au: 234.3,
+//   eccentricity: 3.342,
+//   velocity: 3.34,
+//   mass: 3.244,
+//   inclination: 32.45
+// }
+// system.PlanetX = PlanetX
+// console.log(system)
 
-// Planet X
+// The Reading List
