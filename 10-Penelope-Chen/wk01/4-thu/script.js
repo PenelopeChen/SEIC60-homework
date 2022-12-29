@@ -206,3 +206,6 @@ console.log(system.Mercury.mass)
 // 2
 console.log(system.Venus.eccentricity)
 // 3
+const outerPlanetSatelliteSum = system.Jupiter.satellites + system.Saturn.satellites + system.Uranus.satellites + system.Neptune.satellites 
+console.log(outerPlanetSatelliteSum)
+// 4
