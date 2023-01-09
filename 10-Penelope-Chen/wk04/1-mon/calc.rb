@@ -77,6 +77,13 @@ until menu_choice == 'q'
 
         payment = loan / annuity 
         puts "\n$%.2f per month" % [payment]
+    when 'bmi'
+        puts "You chose BMI calculation!"
+        puts "Enter weight in kg"
+        weight = gets.to_i
+        puts "Enter height in m"
+        height = gets.to_f
+        puts "Your BMI is #{ weight / height ** 2}"
     else 
         puts "Invalid selection. You idiot."
     end
