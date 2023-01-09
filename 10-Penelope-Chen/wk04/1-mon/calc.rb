@@ -27,25 +27,25 @@ until menu_choice == 'q'
     # added more 'when' clauses for subtract, multiply, divide, etc.
     when 'm'
         puts "You chose multiplication!"
-        puts "Enter any 2 numbers."
-        def mul(a, b)
-            a * b 
-        end
-        # puts, mul(, )
+        puts "Enter 1st number."
+        num1 = gets.to_i 
+        puts "Enter 2nd number."
+        num2 = gets.to_i
+        puts "The multiplication of #{ num1 } & #{ num2 } = #{ num1 * num2 } "
     when 'd'
         puts "You chose division!"
-        puts "Enter any 2 numbers."
-        def div(a, b)
-            a / b 
-        end 
-        # puts, div(, )
+        puts "Enter 1st number."
+        num1 = gets.to_i 
+        puts "Enter 2nd number."
+        num2 = gets.to_i
+        puts "The division of #{ num1 } & #{ num2 } = #{ num1 / num2 } "
     when 's'
         puts "You chose subtraction!"
-        puts "Enter any 2 numbers."
-        def sub(a, b)
-            a - b 
-        end 
-        # puts, sub(, )
+        puts "Enter 1st number."
+        num1 = gets.to_i 
+        puts "Enter 2nd number."
+        num2 = gets.to_i
+        puts "The subtraction of #{ num1 } & #{ num2 } = #{ num1 - num2 } "
     else 
         puts "Invalid selection. You idiot."
     end
