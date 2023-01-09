@@ -2,7 +2,10 @@ def show_menu
     puts "Calculator" # TODO: checkout .center to make this look nicer
     puts "=-" * 40 # Budget horizontal dividing line
     puts "[a] - Addition"
-    # TODO: add other operations here (multiply, divide, subtract)
+    # TODO: add other operations here (multiply, divide, subtract) - done
+    puts "[m] - Multiplication"
+    puts "[d] - Division"
+    puts "[s] - Subtraction"
     puts "[q] - Quit"
     print "Enter your choice"
 end
@@ -21,7 +24,7 @@ until menu_choice == 'q'
         puts "Invalid selection. You idiot."
     end
     
-    # show the menu again 
+    # show the menu again - done
     show_menu 
     menu_choice = gets.chomp.downcase
 end 
