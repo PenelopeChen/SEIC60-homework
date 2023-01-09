@@ -6,6 +6,8 @@ def show_menu
     puts "[m] - Multiplication"
     puts "[d] - Division"
     puts "[s] - Subtraction"
+    puts "[e] - Exponentiation"
+    puts "[sr] - Square Root"
     puts "[q] - Quit"
     print "Enter your choice: "
 end
@@ -46,6 +48,18 @@ until menu_choice == 'q'
         puts "Enter 2nd number."
         num2 = gets.to_i
         puts "The subtraction of #{ num1 } & #{ num2 } = #{ num1 - num2 } "
+    when 'e'
+        puts "You chose exponentiation!"
+        puts "Enter 1st number."
+        num1 = gets.to_i 
+        puts "Enter 2nd number."
+        num2 = gets.to_i
+        puts "The power of #{ num1 } to #{ num2 } = #{ num1 ** num2 } "
+    when 'sr'
+        puts "You chose square root!"
+        puts "Enter a number."
+        num1 = gets.to_i
+        puts "The square root of #{ num1 } = #{ Math.sqrt(num1) }"
     else 
         puts "Invalid selection. You idiot."
     end
