@@ -87,14 +87,14 @@ until menu_choice == 'q'
     when 't'
         puts "You chose Trip Calculation!"
         puts "Enter distance in km"
-        distance = gets.to_i
+        distance = gets.to_i # 80
         puts "Enter km/litre"
-        km_per_l = gets.to_i
-        puts "Enter cost/litre"
-        cost_per_l = gets.to_f
+        km_per_l = gets.to_f # 0.058km/litre
+        puts "Enter cost in cents/litre"
+        cost = gets.to_i # 1.5
         puts "Enter speed in km/hr"
-        speed = gets.to_i
-        puts ""
+        speed = gets.to_i # 60
+        puts "Your approximate trip time is #{ distance / speed } minutes & your cost for this trip is $#{ distance * km_per_l * cost * 100 }."
     else 
         puts "Invalid selection. You idiot."
     end
