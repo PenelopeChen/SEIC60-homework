@@ -18,8 +18,21 @@ until menu_choice == 'q'
     case menu_choice
     when 'a'
         puts "You chose addition!"
-        # TODO: actually do the actual addition
-    # TODO: add more 'when' clauses for subtract, multiply, divide, etc.
+        # done the actual addition
+        def add(a, b)
+            a + b 
+        end
+    # added more 'when' clauses for subtract, multiply, divide, etc.
+    when 'm'
+        puts "You chose multiplication!"
+        def mul(a, b)
+            a * b 
+        end
+    when 'd'
+        puts "You chose division!"
+        def div(a, b)
+            a / b 
+        end 
     else 
         puts "Invalid selection. You idiot."
     end
