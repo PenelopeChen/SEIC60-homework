@@ -8,6 +8,9 @@ def show_menu
     puts "[s] - Subtraction"
     puts "[e] - Exponentiation"
     puts "[sr] - Square Root"
+    puts "[mg] - Mortgage Calculation"
+    puts "[bmi] - BMI Calculation"
+    puts "[t] - Trip Calculation"
     puts "[q] - Quit"
     print "Enter your choice: "
 end
@@ -60,6 +63,20 @@ until menu_choice == 'q'
         puts "Enter a number."
         num1 = gets.to_i
         puts "The square root of #{ num1 } = #{ Math.sqrt(num1) }"
+    when 'mg' 
+        puts "You chose mortgage calculation!"
+        puts "Enter loan amount"
+        loan = gets.to_i
+        puts "Enter length of time in months"
+        time = gets.to_i
+        puts "Enter interest rate"
+        rate = gets.to_f/100
+
+        i = (1 + rate / 12) ** (12/12) - 1
+        annuity = (1 - (1 / (1 + i)) ** time) / i 
+
+        payment = loan / annuity 
+        puts "\n$%.2f per month" % [payment]
     else 
         puts "Invalid selection. You idiot."
     end
