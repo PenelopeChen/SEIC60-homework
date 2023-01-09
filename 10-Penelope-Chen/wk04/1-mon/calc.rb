@@ -84,6 +84,17 @@ until menu_choice == 'q'
         puts "Enter height in m"
         height = gets.to_f
         puts "Your BMI is #{ weight / height ** 2}"
+    when 't'
+        puts "You chose Trip Calculation!"
+        puts "Enter distance in km"
+        distance = gets.to_i
+        puts "Enter km/litre"
+        km_per_l = gets.to_i
+        puts "Enter cost/litre"
+        cost_per_l = gets.to_f
+        puts "Enter speed in km/hr"
+        speed = gets.to_i
+        puts ""
     else 
         puts "Invalid selection. You idiot."
     end
