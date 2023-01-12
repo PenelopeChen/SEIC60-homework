@@ -6,21 +6,49 @@ get '/' do
     erb :home 
 end 
 
-# INDEX 
+# INDEX: show all playing cards
+get '/playing_cards' do
+    @playing_cards = query_db "SELECT * FROM playing_cards"
+    erb :playing_cards_index
+end
 
-# NEW 
+# NEW: display a form for entering details about a new playing card 
+get '/playing_cards/new' do 
+    erb :playing_cards_new
+end
 
-# CREATE *
+# CREATE: insert a new butterfly into the db
+post '/playing_cards' do 
+    query_db "INSERT INTO playing_cards (name, suit, power, image) VALUES ('#{ params[:name]}', '#{ params[:suit]}','#{ params[:power]}', '#{ params[:image]}')"
+    redirect to('/playing_cards') # GET request -- go back to the INDEX
+end
 
-# SHOW 
+# SHOW: show a single playing card in more detail 
+get '/playing_cards' do 
+    playing_cards = query_db "SELECT * FROM playing_cards WHERE id=#{ params[:id] }"
+    @playing_card = playing_cards.first # pluck the single playing card from the array of results
+    erb :playing_cards_show
+end
 
-# EDIT 
+# EDIT: show a form to allow the user to edit an existing butterfly
+get '/playing_cards/:id/edit' do 
+    # get the playing card from the database
+    playing_cards = query_db "SELECT * FROM playing_cards WHERE id=#{ params[:id] }" 
+    @playing_card = playing_cards.first
+    erb :playing_cards_edit
+end
 
-# POST
-
-# UPDATE *
+# UPDATE
+post '/playing_cards/:id' do
+    query_db "UPDATE playing_cards SET name='#{ params[:name] }', '#{ params[:suit] }', '#{ params[:power] }', '#{ params[:image] }' WHERE id=#{ params[:id] }"
+    redirect to("/playing_cards/#{ params["id"] }") # GET request to SHOW
+end
 
 # DELETE *
+get '/playing_cards/:id/delete' do
+    query_db "DELETE FROM playing_cards WHERE id=#{ params[:id] }"
+    redirect to('/playing_cards')
+end
 
 # Opening & closing new db connection
 def query_db(sql_statement)
