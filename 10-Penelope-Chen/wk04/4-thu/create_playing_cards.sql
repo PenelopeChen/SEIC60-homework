@@ -6,7 +6,7 @@ CREATE TABLE playing_cards (
     image TEXT 
 );
 
-INSERT INTO playing_cards (id, name, suit, power, image) VALUES (1, "Ace of Clubs", "clubs", 1, );
+INSERT INTO playing_cards (id, name, suit, power, image) VALUES (1, "Ace of Clubs", "clubs", 1, https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9bGrBKDd228BOhCxJlITHy3lNeOoGaHG7wg&usqp=CAU);
 INSERT INTO playing_cards (id, name, suit, power, image) VALUES (2 , "Two of Clubs", "clubs", 2, );
 INSERT INTO playing_cards (id, name, suit, power, image) VALUES (3 , "Three of Clubs", "clubs", 3, );
 INSERT INTO playing_cards (id, name, suit, power, image) VALUES (4 , "Four of Clubs", "clubs", 4, );
