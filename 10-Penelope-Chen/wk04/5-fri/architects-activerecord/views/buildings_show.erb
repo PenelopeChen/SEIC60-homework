@@ -1,10 +1,10 @@
-<h1><%= @plant.name %></h1>
+<h1><%= @building.name %></h1>
 
-<% unless @plant.image.nil? || @plant.image.empty? %>
-    <img class="feature" src="<%= @plant.image %>" alt="<%= @plant.name %>">
+<% unless @building.image.nil? || @building.image.empty? %>
+    <img class="feature" src="<%= @building.image %>" alt="<%= @building.name %>">
 <% end %>
 
 <div class="controls">
-    <a href="/plants/<%= @plant.id %>/edit">Edit plant</a>
-    <a href="/plants/<%= @plant.id %>/delete">Delete plant</a>
+    <a href="/buildings/<%= @building.id %>/edit">Edit building</a>
+    <a href="/buildings/<%= @building.id %>/delete">Delete building</a>
 </div>

@@ -1,9 +1,9 @@
-<h1>All butterflies</h1>
+<h1>All architects</h1>
 
-<% @butterflies.each do |butterfly| %>
+<% @architects.each do |architect| %>
     <p>
-        <a href="/butterflies/<%= butterfly["id"] %>">
-            <%= butterfly["name"] %>
+        <a href="/architects/<%= architect["id"] %>">
+            <%= architect["name"] %>
         </a>
     </p>
 <% end %>

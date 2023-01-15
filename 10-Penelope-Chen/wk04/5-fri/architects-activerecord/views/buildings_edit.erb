@@ -1,15 +1,15 @@
-<h1>Edit plant</h1>
+<h1>Edit building</h1>
 
-<form action="/plants/<%= @plant.id %>" method="post">
+<form action="/buildings/<%= @building.id %>" method="post">
     <label>
         Name:
-        <input name="name" required value="<%= @plant.name %>">
+        <input name="name" required value="<%= @building.name %>">
     </label>
 
     <label>
         Image:
-        <input type="url" name="image" value="<%= @plant.image %>">
+        <input type="url" name="image" value="<%= @building.image %>">
     </label>
 
-    <button>Update plant</button>
+    <button>Update building</button>
 </form>

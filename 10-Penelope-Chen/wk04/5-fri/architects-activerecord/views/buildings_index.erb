@@ -1,9 +1,9 @@
-<h1>All plants</h1>
+<h1>All buildings</h1>
 
-<% @plants.each do |plant| %>
+<% @buildings.each do |building| %>
     <p>
-        <a href="/plants/<%= plant.id %>">
-            <%= plant.name %>
+        <a href="/buildings/<%= building.id %>">
+            <%= building.name %>
         </a>
     </p>
 <% end %>
