@@ -12,113 +12,109 @@ ActiveRecord::Base.establish_connection(
 ActiveRecord::Base.logger = Logger.new(STDERR)
 
 # Model: a class that is backed by a database
-class Butterfly < ActiveRecord::Base
+class Architect < ActiveRecord::Base
 end
 
-class Plant < ActiveRecord::Base
+class Building < ActiveRecord::Base
 end
 
 get '/' do
     erb :home
 end
 
-# INDEX: show all the butterflies
-get '/butterflies' do
-    @butterflies = Butterfly.all
-    erb :butterflies_index
+# INDEX: show all the architects
+get '/architects' do
+    @architects = Architect.all
+    erb :architects_index
 end
 
-# NEW: display a form for entering details about a new butterfly
-get '/butterflies/new' do
-    erb :butterflies_new
+# NEW: display a form for entering details about a new architect
+get '/architects/new' do
+    erb :architects_new
 end
 
-# CREATE: insert a new butterfly into the database
-post '/butterflies' do
-    butterfly = Butterfly.new
-    butterfly.name = params[:name]
-    butterfly.family = params[:family]
-    butterfly.image = params[:image]
-    butterfly.save
-    redirect to("/butterflies/#{ butterfly.id }") # GET request -- SHOW
+# CREATE: insert a new architect into the database
+post '/architects' do
+    architect = Architect.new
+    architect.name = params[:name]
+    architect.save
+    redirect to("/architects/#{ architect.id }") # GET request -- SHOW
 end
 
-# SHOW: show a single butterfly in more detail
-get '/butterflies/:id' do
-    @butterfly = Butterfly.find params[:id]
-    erb :butterflies_show
+# SHOW: show a single architect in more detail
+get '/architects/:id' do
+    @architect = Architect.find params[:id]
+    erb :architects_show
 end
 
-# EDIT: show a form to allow the user to edit an existing butterfly
-get '/butterflies/:id/edit' do
-    @butterfly = Butterfly.find params[:id]
-    erb :butterflies_edit
+# EDIT: show a form to allow the user to edit an existing architect
+get '/architects/:id/edit' do
+    @architect = Architect.find params[:id]
+    erb :architects_edit
 end
 
 # UPDATE
-post '/butterflies/:id' do
-    butterfly = Butterfly.find params[:id]
-    butterfly.name = params[:name]
-    butterfly.family = params[:family]
-    butterfly.image = params[:image]
-    butterfly.save
-    redirect to("/butterflies/#{ params[:id ] }") # GET request to SHOW
+post '/architects/:id' do
+    architect = Architect.find params[:id]
+    architect.name = params[:name]
+    architect.save
+    redirect to("/architects/#{ params[:id ] }") # GET request to SHOW
 end
 
 # DELETE
-get '/butterflies/:id/delete' do
-    butterfly = Butterfly.find params[:id]
-    butterfly.destroy
-    redirect to('/butterflies')
+get '/architects/:id/delete' do
+    architect = Architect.find params[:id]
+    architect.destroy
+    redirect to('/architects')
 end
 
-# Plants CRUD #######################################################
+# Building CRUD #######################################################
 # INDEX
-get '/plants' do
-    @plants = Plant.all
-    erb :plants_index
+get '/buildings' do
+    @buildings = Building.all
+    erb :buildings_index
 end
 
 # NEW
-get '/plants/new' do
-    erb :plants_new
+get '/buildings/new' do
+    erb :buildings_new
 end
 
 # CREATE
-post '/plants' do
-    plant = Plant.new
-    plant.name = params[:name]
-    plant.image = params[:image]
-    plant.save
-    redirect to("/plants/#{ plant.id }")
+post '/buildings' do
+    building = Building.new
+    building.name = params[:name]
+    building.image = params[:image]
+    building.save
+    redirect to("/buildings/#{ building.id }")
 end
 
 # SHOW
-get '/plants/:id' do
-    @plant = Plant.find params[:id]
-    erb :plants_show
+get '/buildings/:id' do
+    @building = Building.find params[:id]
+    erb :buildings_show
 end
 
 # EDIT
-get '/plants/:id/edit' do
-    @plant = Plant.find params[:id]
-    erb :plants_edit
+get '/buildings/:id/edit' do
+    @building = Building.find params[:id]
+    erb :buildings_edit
 end
 
 # UPDATE
-post '/plants/:id' do
-    plant = Plant.find params[:id]
-    plant.name = params[:name]
-    plant.image = params[:image]
-    plant.save
-    redirect to("/plants/#{ plant.id }")
+post '/buildings/:id' do
+    building = Building.find params[:id]
+    building.name = params[:name]
+    building.image = params[:image]
+    building.save
+    redirect to("/buildings/#{ building.id }")
 end
 
 # DELETE
-get '/plants/:id/delete' do
-    plant = Plant.find params[:id]
-    plant.destroy
-    redirect to('/plants')
+get '/buildings/:id/delete' do
+    building = Building.find params[:id]
+    building.destroy
+    redirect to('/buildings')
 end
 
 after do
