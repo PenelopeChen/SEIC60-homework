@@ -1,14 +1,25 @@
-<h2>Play Secret Number!</h2>
+<h2>Verdict: <%= @result %></h2>
 
-<p>Guess a number between 0 & 10.</p>
+<!-- # MAX_VALUE = gets.to_i
 
-<form action="/number/game">
+# input = Random.rand 0..MAX_VALUE
 
-    <label>
-        Number: 
-        <input name="number" placeholder="Type number here" required autofocus>
-    </label>
+# print "Guess a whole number between & inclusive of 0 to #{ MAX_VALUE}."
+# guess = gets.to_i 
 
-    <button>Am I correct?</button>
+# if guess == input 
+#     puts "Correct!"
+# elsif guess < input 
+#     puts "Lower."
+# else 
+#     puts "Higher."
 
-</form>
+# until guess == input 
+#     if guess < input
+#         print "Wrong, guess higher"
+#     else 
+#         print "Wrong, guess lower"
+#         guess = gets.to_i
+# end
+
+# puts "Congratulations" -->
