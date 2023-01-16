@@ -1,0 +1,2 @@
+class MagicController < ApplicationController
+end

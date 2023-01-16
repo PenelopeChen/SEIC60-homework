@@ -1,0 +1,2 @@
+class RpsController < ApplicationController
+end
