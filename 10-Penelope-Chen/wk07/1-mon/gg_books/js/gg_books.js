@@ -1,6 +1,6 @@
 const fetchCover = function () {
     const xhr = new XMLHttpRequest(); 
-        xhr.open('GET', 'https://www.googleapis.com/books/v1/volumes?q=title:Jaws');
+        xhr.open('GET', 'https://www.googleapis.com/books/v1/volumes?q=title:Jaws?json');
         xhr.send(); 
 
         xhr.onreadystatechange = function () {
@@ -11,9 +11,11 @@ const fetchCover = function () {
 
             console.log(data);
 
-            const img = document.createElement('img');
-            img.innerText = data.text;
+            let img = document.createElement('img');
+            img.src = data.items[0].volumeInfo.imageLinks.thumbnail;
             document.body.appendChild(img)
+
+            console.log(img)
         }
 }
 
