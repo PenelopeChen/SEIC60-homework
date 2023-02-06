@@ -1,7 +1,9 @@
+import CocktailSearch from "./CocktailSearch";
+
 function App() {
   return (
     <div className="App">
-      diy bar is coming soon
+      <CocktailSearch />
     </div>
   );
 }
